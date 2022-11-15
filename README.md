@@ -13,7 +13,11 @@ The baseline architecture was U-Net: [Convolutional Networks for Biomedical Imag
 ## cGAN-based Segmentation (Res-UNet++)
 In order to improve the performance, I designed a custom conditional Generative Adversarial Network (cGAN) shown below. The generator design follows the encoder-decoder structure with skip-connections and residual blocks. I adapted the
 Res-UNet++ architecture as a basis for my work.
+
+
 ![alt text](https://github.com/jainaviral898/Cell-Nuclei-Segmentation-using-cGAN/blob/master/images/resunet++_image.jpg)
+
+
 The discriminator on the other hand uses patch information to resolve details in the prediction map. With cGAN, the dice similarity coefficient increases to 0.723.
 ## Results
 Several metric functions like Dice, Jaccard, Haussdorf Distance were used to benchmark the performance. Values can be found out in [this document](https://github.com/jainaviral898/Cell-Nuclei-Segmentation-using-cGAN/blob/master/final%20results.pdf).
